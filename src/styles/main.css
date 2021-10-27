@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa|Patua+One");
+
+/*Typography
+--------------------------------------------------------------*/
+body,
+button,
+input,
+select,
+textarea {
+	color: #404040;
+	font-family: "Comfortaa", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Patua One", serif;
+  letter-spacing: 2px;
+}
+
+#container {
+	padding: 20px;
+}
+
+/* Nav Bar */
+.nav-component {
+	display: flex;
+	background-color: darkslategray;
+	height: 64px;
+	padding: 0px 20px;
+}
+
+.glassdale-pd {
+	padding-top: 14px;
+}
+
+.glassdale-pd a{
+	font-family: Patua One, serif;
+	font-weight: normal;
+	font-size: 24px;
+	text-decoration: none;
+	color: white;
+}
+
+#navBar {
+	background-color: darkslategray;
+	overflow: hidden;
+	height: 64px;
+	font-weight: bold;
+}
+
+#navBar ul {
+	padding-left: 20px;
+}
+
+#navBar li {
+	list-style-type: none;
+	float: left;
+	padding: 0px 20px 2px 0px;
+}
+
+#navBar li a {
+	color: white;
+	text-decoration: none;
+}
+
+#navBar li a:hover {
+	background-color: palegreen;
+	color: black;
+	padding:30px 0;
+}
+
+.navLink {
+	margin-top: 10px;
+}
+
+.home-link li a:hover {
+	background-color: white;
+	color: black;
+}
+
+/* Criminals List */
+#criminals-list-container {
+	border: 1px solid purple
+}
+.criminals-list {
+	display:flex;
+	justify-content:flex-start;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+.criminals-list-card {
+	border: 1px solid gray;
+	width: 30vw;
+	padding: 5px;
+	margin: 5px;
+}
+
+.criminalsName {
+	font-size: 14px;
+	color: darkred;
+	font-weight: bold;
+}
+
+.criminalsAge, .eyeColor, .conviction, .termStart, .termEnd, .arrestingOfficer {
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.conviction {
+	font-weight: bold;
+	text-transform: uppercase; 
+}
+
+/* Officers List */
+#officers-list-container {
+	border: 1px solid blue;
+} 
+
+.officers-list{
+	display:flex;
+	justify-content:flex-start;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+.officers-list-card {
+	display: flex;
+	background-color: rgb(24, 33, 87);
+	color: white;
+	width: 30vw;
+	padding: 5px;
+	margin: 5px;
+}
+
+.officerImg img {
+	background: lightskyblue;
+	width: 60px;
+	height: 80px;
+	vertical-align: middle;
+	overflow: hidden;
+	margin:7px;
+}
+
+.officerName {
+	font-size: 15px;
+	padding:10% 10px 0px;
+}
+
+.officerYrs {
+	font-size: 14px;
+	font-style: italic;
+}
+
+/* Facility List */
+#facility-list-container {
+	border: 1px solid purple
+}
+.facility-list {
+	display:flex;
+	justify-content:flex-start;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+.facility-list-card {
+	border: 1px solid gray;
+	width: 30vw;
+	padding: 5px;
+	margin: 5px;
+}
+
+.facilityName {
+	font-size: 14px;
+	color: darkolivegreen;
+	font-weight: bold;
+}
+
+.facilityLevel, .facilityCapacity {
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Note List */
+.note-form {
+	padding-top: 1px;
+}
+
+.note-form-container {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin-bottom: 30px;
+	width: 70vw;
+}
+
+#note-date {
+	width: 40vw;
+	height: 30px;
+}
+
+#note-suspect-name {
+	font-size: 12px;
+	padding: 5px;
+}
+
+#note-text {
+	height: 10vh;
+	font-size: 12px;
+	padding: 5px;
+	vertical-align: top;
+}
+
+.saveNoteBtn {
+	background-color: forestgreen;
+	border: none;
+	color: white;
+	width: 150px;
+}
+
+.note-form-container button:hover {
+	background-color: darkslategrey;
+}
+
+.note-past-list-container {
+	border-top: 1px dotted grey;
+}
+
+.note-past-list ul {
+	list-style: none;
+	padding-left: 0px;
+}
+
+.note-past-list {
+	border-top: 1px dotted grey;
+	padding-top: 10px;
+}
+
+.notePastBtns button {
+	border: none;
+	background-color: gray;
+	color: white;
+	font-size: 10px;
+	padding: 3px 8px 2px;
+	margin: 0px 7px 10px;
+}
+
+.notePastBtns button:hover {
+	background-color: dimgray;
+	color: white;
+}
+
+.notePastBtns {
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 10px;
+}
+
+/* practice example button */
+/* .dark-background{
+	background-color: #2b362e;
+	color: #fafcfb;
+  } */
+  

@@ -1,0 +1,34 @@
+{
+  "notes": [
+    {
+      "id": 1,
+      "noteDate": "10/1/2021",
+      "suspectName": "Jesse James",
+      "noteText": "As a teen in 1864, James and his brother Frank joined a guerrilla unit responsible for murdering dozens of Union soldiers."
+    },
+    {
+      "id": 2,
+      "noteDate": "10/4/2021",
+      "suspectName": "Billy the Kid",
+      "noteText": "Legend says the Wild West outlaw Billy the Kid—cattle rustler, gunslinger, murderer, escape artist—killed 21 people before he turned 21 years old, his age at death."
+    },
+    {
+      "id": 3,
+      "noteDate": "10/6/2021",
+      "suspectName": "Belle Starr",
+      "noteText": "Born to a well-to-do, Confederate-sympathizing family, Myra Maybelle Shirley Starr—later known as Belle, and, eventually, the Bandit Queen—was a teenager in Scyene, Texas, in 1864 when outlaws Jesse James and the Younger brothers used her family’s home as a hideout."
+    },
+    {
+      "id": 4,
+      "noteDate": "10/8/2021",
+      "suspectName": "Butch Cassidy",
+      "noteText": "Born Robert LeRoy Parker in 1866, in Circleville, Utah to devout Mormons, the famed outlaw who later adopted the moniker Butch Cassidy grew up dirt poor, one of 13 children."
+    },
+    {
+      "id": 5,
+      "noteDate": "10/10/2021",
+      "suspectName": "John Wesley Hardin",
+      "noteText": "Did he kill 20 men? Forty? Fifty? The total body count may be unclear, but according to John Wesley Hardin, they all deserved it. I never killed anyone who didn't need killing, he famously said."
+    }
+  ]
+}
