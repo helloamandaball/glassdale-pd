@@ -1,17 +1,28 @@
 import { Criminals } from "./Criminals.js"
 import { useCriminals, getCriminals } from "./CriminalsDataProvider.js"
 
-//What is contentTarget representing? Where I want some code bits to go in the html element.
 const contentTarget = document.querySelector(".print-list")
 
-export const CriminalsList = () => {
+export const CriminalsList = (convictionFilter) => {
+    let criminalListContainer = document.querySelector(".print-list");
+    criminalListContainer.innerHTML = ""
+
     getCriminals()
     .then(() => {
         let criminalsArray = useCriminals();
         let criminalsHTML = "";
-
-        criminalsArray.forEach((singleCriminalsObject) => {
-            criminalsHTML += Criminals(singleCriminalsObject)
+    
+        if(convictionFilter){
+            criminalsArray = criminalsArray.filter(singleCriminalInLoop => {
+            // write the condition here to filter for criminals whose crime matches the convictionFilter value
+                return convictionFilter === singleCriminalInLoop.conviction
+            })
+        }
+    
+        // at this point, the value criminals will either be all of the criminals (if no convictionFilter was selected) or the criminals that match the crime selected 
+        // either way, we want to print them!
+        criminalsArray.forEach((singleCriminal) => {
+            criminalsHTML += Criminals(singleCriminal);
         })
 
         contentTarget.innerHTML = `
@@ -20,7 +31,6 @@ export const CriminalsList = () => {
                 ${criminalsHTML}
             </div>
         `
-
     })
 }
 

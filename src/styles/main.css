@@ -18,6 +18,10 @@ h1,h2,h3,h4,h5,h6 {
   letter-spacing: 2px;
 }
 
+body {
+	margin: 0;
+}
+
 #container {
 	padding: 20px;
 }
@@ -56,7 +60,7 @@ h1,h2,h3,h4,h5,h6 {
 #navBar li {
 	list-style-type: none;
 	float: left;
-	padding: 0px 20px 2px 0px;
+	
 }
 
 #navBar li a {
@@ -72,11 +76,18 @@ h1,h2,h3,h4,h5,h6 {
 
 .navLink {
 	margin-top: 10px;
+	font-size: 14px;
+	padding: 0px 20px 2px 0px;
 }
 
 .home-link li a:hover {
 	background-color: white;
 	color: black;
+}
+
+/* Convictions Menu */
+.convictionsName {
+	text-transform: capitalize;
 }
 
 /* Criminals List */
@@ -263,3 +274,42 @@ h1,h2,h3,h4,h5,h6 {
 	color: #fafcfb;
   } */
   
+
+  @media only screen and (max-width: 500px) {
+	/* Nav Bar */
+	.nav-component {
+		background-color: darkslategrey;
+		width: 100%;
+	}
+
+	.glassdale-pd {
+		padding-right: 10px;
+		padding-top: 18px;
+		width: 30vw;
+	}
+
+	.glassdale-pd a {
+		font-size: 18px;
+	}
+
+	#navBar {
+		background-color: darkslategray;
+	}
+
+	#navBar ul {
+		padding-left: 10px;
+	}
+
+	.navLink {
+		font-size: 11px;
+		margin-top: 14px;
+	}
+
+	/* Officers List */
+	.officers-list-card {
+		width: 80vw;
+		padding: 5px;
+		margin: 5px;
+	}
+
+  }

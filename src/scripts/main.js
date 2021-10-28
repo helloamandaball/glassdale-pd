@@ -3,10 +3,12 @@ import { OfficersList } from "./officers/OfficersList.js";
 import { FacilityList } from "./facility/FacilityList.js"
 import { NoteForm } from "./notes/NoteForm.js"
 import { NoteList } from "./notes/NoteList.js";
+import { ConvictionSelect } from "./crimes/ConvictionSelect.js";
 
 // CriminalsList()
 // OfficersList()
 // NoteForm()
+ConvictionSelect()
 
 
 //////////// practice example button: ////////////
@@ -24,3 +26,13 @@ import { NoteList } from "./notes/NoteList.js";
 //     bodyElement.classList.toggle("dark-background")
 //   })
 ///////////////////////////////////////////////
+
+//example filter
+// let fake = [
+//     "amanda", "andy", "tommy", "mel", "brent", "amanda", "mel"
+// ]
+
+// let filterArray = fake.filter(thingInLoop => {
+//     return thingInLoop === "brent"
+// })
+// console.log(filterArray)
