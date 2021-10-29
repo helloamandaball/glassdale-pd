@@ -1,9 +1,10 @@
 import { Criminals } from "./Criminals.js"
 import { useCriminals, getCriminals } from "./CriminalsDataProvider.js"
+// import { OfficerSelect } from "../officers/OfficerSelect.js"
 
 const contentTarget = document.querySelector(".print-list")
 
-export const CriminalsList = (convictionFilter) => {
+export const CriminalsList = (selectListName, selectedChoice) => {
     let criminalListContainer = document.querySelector(".print-list");
     criminalListContainer.innerHTML = ""
 
@@ -12,13 +13,18 @@ export const CriminalsList = (convictionFilter) => {
         let criminalsArray = useCriminals();
         let criminalsHTML = "";
     
-        if(convictionFilter){
+        if(selectListName === "crimes"){
             criminalsArray = criminalsArray.filter(singleCriminalInLoop => {
             // write the condition here to filter for criminals whose crime matches the convictionFilter value
-                return convictionFilter === singleCriminalInLoop.conviction
+                return singleCriminalInLoop.conviction === selectedChoice
+            })
+        } 
+        else if(selectListName === "officers"){
+            criminalsArray = criminalsArray.filter(singleOfficerlInLoop => {
+                return singleOfficerlInLoop.arrestingOfficer === selectedChoice
             })
         }
-    
+        
         // at this point, the value criminals will either be all of the criminals (if no convictionFilter was selected) or the criminals that match the crime selected 
         // either way, we want to print them!
         criminalsArray.forEach((singleCriminal) => {

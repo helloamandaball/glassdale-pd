@@ -1,6 +1,5 @@
-/*   ConvictionSelect component that renders a select HTML element
- *   which lists all convictions in the Glassdale PD API */
-import { useConvictions, getConvictions } from "./ConvictionProvider.js"
+/*   ConvictionSelect component that renders a select HTML element which lists all convictions in the Glassdale PD API */
+import { useConvictions, getConvictions } from "./ConvictionDataProvider.js"
 import { CriminalsList } from "../criminals/CriminalsList.js"
 
 // Get a reference to the DOM element where the <select> will be rendered
@@ -48,7 +47,7 @@ eventHub.addEventListener("change", (eventObject) => {
         - Then call CriminalList, and pass in information about the crime that was chosen
         */
        const selectedCrime = eventObject.target.value
-       CriminalsList(selectedCrime)
+       CriminalsList("crimes", selectedCrime)
     }
 })
 

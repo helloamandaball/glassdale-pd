@@ -26,6 +26,12 @@ body {
 	padding: 20px;
 }
 
+.mainImage img{
+	display: block;
+	width: 70vw;
+	margin: auto;
+}
+
 /* Nav Bar */
 .nav-component {
 	display: flex;
@@ -85,7 +91,20 @@ body {
 	color: black;
 }
 
-/* Convictions Menu */
+/* Convictions & Officer Drop-down Menu */
+.filterMenuContainer {
+	display:flex;
+	justify-content:flex-start;
+	flex-wrap: wrap;
+	flex-direction: row;
+	gap: 10px;
+}
+
+#crimeSelect, #OfficerSelect {
+	height: 24px;
+	width: 35vw;
+	font-size: 12px;
+}
 .convictionsName {
 	text-transform: capitalize;
 }
@@ -103,7 +122,7 @@ body {
 
 .criminals-list-card {
 	border: 1px solid gray;
-	width: 30vw;
+	width: 35vw;
 	padding: 5px;
 	margin: 5px;
 }
@@ -119,7 +138,7 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-.conviction {
+.convictionName {
 	font-weight: bold;
 	text-transform: uppercase; 
 }
@@ -140,7 +159,7 @@ body {
 	display: flex;
 	background-color: rgb(24, 33, 87);
 	color: white;
-	width: 30vw;
+	width: 40vw;
 	padding: 5px;
 	margin: 5px;
 }
