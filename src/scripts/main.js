@@ -5,13 +5,16 @@ import { NoteForm } from "./notes/NoteForm.js"
 import { NoteList } from "./notes/NoteList.js";
 import { ConvictionSelect } from "./crimes/ConvictionSelect.js";
 import { OfficerSelect } from "./officers/OfficerSelect.js"
+import { HomePage } from "./homepage/HomePage.js"
+import { Footer } from "./footer/footer.js";
 
 // CriminalsList()
 // OfficersList()
 // NoteForm()
 ConvictionSelect()
 OfficerSelect()
-
+HomePage()
+Footer()
 
 //////////// practice example button: ////////////
 // const darkModeButton = document.querySelector("#dark-mode")

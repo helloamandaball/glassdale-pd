@@ -32,6 +32,14 @@ body {
 	margin: auto;
 }
 
+.welcomeHdr {
+	text-align: center;
+}
+
+.welcomeBlurb {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
 /* Nav Bar */
 .nav-component {
 	display: flex;
@@ -292,6 +300,51 @@ body {
 	background-color: #2b362e;
 	color: #fafcfb;
   } */
+
+
+/* Footer */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    background-color: rgb(22, 41, 41);
+    margin-top: 30px;
+    padding: 30px 20px 20px 20px;
+    /* box-shadow: 0px -10px 20px rgb(189, 189, 189); */
+}
+
+footer p{
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    /* padding-top: 10px; */
+}
+
+footer a{
+    color: white;
+}
+
+footer a:hover{
+    color: lightskyblue;
+}
+
+footer img{
+    display: block;
+    width: 90px;
+    height: auto;
+    background-color: white;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.footerBlurb {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 14px;
+    color: lightskyblue;
+    padding-top: 0px;
+}
   
 
   @media only screen and (max-width: 500px) {

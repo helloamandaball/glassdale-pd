@@ -9,7 +9,7 @@ export const NoteForm = () => {
         <div class="note-form-container">
             <input type="date" id="note-date">
             <input type="text" id="note-suspect-name" placeholder="Enter Suspect Name">
-            <input type="text" id="note-text" placeholder="Enter Notes Here"> 
+            <textarea id="note-text" name="note-text" rows="4" cols="50" placeholder="Enter Notes Here"></textarea>
             <button id="saveNote" class="saveNoteBtn">Save Note</button>
         </div>
     `

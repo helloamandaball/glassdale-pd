@@ -14,7 +14,7 @@ export const getCriminals = () => {
         .then(messyCriminalsList => messyCriminalsList.json())
         //.then section below then is told to do something with the data, it's called 'sorted' because that's what the .json did with the data, elsewhere it can also be called 'clean' because the data gets cleaned up to use.
         .then(sortedCriminalsList => {
-                console.table(sortedCriminalsList)
+                // console.table(sortedCriminalsList)
                 criminals = sortedCriminalsList 
             }
         )
