@@ -1,8 +1,10 @@
 export const HomePage = () => {
     const contentTarget = document.querySelector(".print-list")
     contentTarget.innerHTML = `
+        <div class="mainImageBox">
         <div class="mainImage">
             <img src="https://thumbs.dreamstime.com/b/police-department-modern-building-sign-front-49089574.jpg" alt="image">
+        </div>
         </div>
         <div class="welcomeHdr">
             <h2>Welcome to Glassdale PD</h2>
