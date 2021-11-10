@@ -1,3 +1,5 @@
+import { Navbar } from "../navbar/navbar.js"
+
 export const HomePage = () => {
     const contentTarget = document.querySelector(".print-list")
     contentTarget.innerHTML = `
@@ -14,6 +16,9 @@ export const HomePage = () => {
     `
 }
 
+Navbar()
+
 document.querySelector("#home-link").addEventListener("click", () => {
+    console.log("homepage link clicked")
     HomePage()
   })

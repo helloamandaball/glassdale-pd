@@ -10,7 +10,7 @@ export const getFacility = () => {
     .then(messyFacilityList => messyFacilityList.json())
 
     .then(sortedFacilityList => {
-            console.table(sortedFacilityList)
+            // console.table(sortedFacilityList)
             facility = sortedFacilityList
         }
     )

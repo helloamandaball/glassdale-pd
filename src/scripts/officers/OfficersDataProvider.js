@@ -10,7 +10,7 @@ export const getOfficers = () => {
     .then(messyOfficersList => messyOfficersList.json())
 
     .then(sortedOfficersList => {
-            console.table(sortedOfficersList)
+            // console.table(sortedOfficersList)
             officers = sortedOfficersList
         }
     )
