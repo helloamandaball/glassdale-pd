@@ -1,6 +1,7 @@
 import { Criminals } from "./Criminals.js"
 import { useCriminals, getCriminals } from "./CriminalsDataProvider.js"
-// import { OfficerSelect } from "../officers/OfficerSelect.js"
+import { OfficerSelect } from "../officers/OfficerSelect.js"
+import { ConvictionSelect } from "../crimes/ConvictionSelect.js"
 
 const contentTarget = document.querySelector(".print-list")
 
@@ -43,5 +44,8 @@ export const CriminalsList = (selectListName, selectedChoice) => {
 // Nav Bar listener
 document.querySelector("#criminals-nav-link").addEventListener("click", () => {
     // invoke the function that prints the criminals
-    CriminalsList()    
+    CriminalsList()  
+    //Triggering the bottom two functions so they only show up whe the Criminals page is clicked and not on other pages  
+    ConvictionSelect()
+    OfficerSelect()
 })
