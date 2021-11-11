@@ -2,7 +2,7 @@
   "notes": [
     {
       "id": 1,
-      "noteDate": "10/1/2021",
+      "noteDate": "10/3/2021",
       "suspectName": "Jesse James",
       "noteText": "As a teen in 1864, James and his brother Frank joined a guerrilla unit responsible for murdering dozens of Union soldiers."
     },
@@ -35,36 +35,6 @@
       "suspectName": "Pacman",
       "noteText": "Maybe the ghosts want to be friends.",
       "id": 6
-    },
-    {
-      "noteDate": "2021-10-27",
-      "suspectName": "oiagnorwngoawng",
-      "noteText": "lkaoinoaignoknag",
-      "id": 7
-    },
-    {
-      "noteDate": "2021-10-28",
-      "suspectName": "ijoinoen",
-      "noteText": "oinoinboibn'",
-      "id": 8
-    },
-    {
-      "noteDate": "2021-10-30",
-      "suspectName": "ioineoibno",
-      "noteText": "oiknoainbo'irng'ang",
-      "id": 9
-    },
-    {
-      "noteDate": "2021-10-16",
-      "suspectName": "llllll",
-      "noteText": "mmmmmm",
-      "id": 10
-    },
-    {
-      "noteDate": "2021-10-22",
-      "suspectName": "9999999000000",
-      "noteText": "jjkgjoiajobinaeoin[eoij[ginawo[g",
-      "id": 11
     }
   ]
 }
