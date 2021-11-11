@@ -19,7 +19,6 @@ Footer()
 // OfficerSelect()
 
 
-
 //////////// practice example button: ////////////
 // const darkModeButton = document.querySelector("#dark-mode")
 

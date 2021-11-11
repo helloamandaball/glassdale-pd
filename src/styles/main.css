@@ -29,8 +29,9 @@ body {
 
 .mainImageBox {
 	width: 100%;
-	background-color: rgb(248, 247, 241);
+	background-color: rgba(248, 247, 241, 0.3);
 	margin: auto;
+	overflow: hidden;
 }
 
 .mainImage img{
@@ -43,14 +44,31 @@ body {
 	text-align: center;
 }
 
+.welcomeHdr h2{
+	margin-bottom: 5px;
+	
+}
+.welcomeHdr h4 {
+	font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: 1px;
+	color: grey;
+	margin-top: 1px;
+	text-decoration: underline;
+}
+
 .welcomeBlurb {
 	font-family: Arial, Helvetica, sans-serif;
+}
+
+.badgeImage {
+	margin: 0 auto;
+	width: 110px;
 }
 
 /* Nav Bar */
 .nav-component {
 	display: flex;
-	background-color: darkslategray;
+	background-color: rgb(23, 61, 87);
 	height: 64px;
 	padding: 0px 20px;
 }
@@ -68,7 +86,7 @@ body {
 }
 
 #navBar {
-	background-color: darkslategray;
+	background-color: rgb(23, 61, 87);
 	overflow: hidden;
 	height: 64px;
 	font-weight: bold;
@@ -172,7 +190,7 @@ body {
 
 .officers-list-card {
 	display: flex;
-	background-color: rgb(23, 61, 87);
+	background-color: rgb(41, 84, 112);
 	color: white;
 	width: 40vw;
 	padding: 5px;
@@ -265,7 +283,7 @@ body {
 }
 
 .note-form-container button:hover {
-	background-color: darkslategrey;
+	background-color: rgb(23, 61, 87);
 }
 
 .note-past-list-container {
@@ -279,7 +297,8 @@ body {
 
 .note-past-list {
 	border-top: 1px dotted grey;
-	padding-top: 10px;
+	padding-top: 1px;
+	margin-bottom: 30px;
 }
 
 .notePastHeaderBox {
@@ -288,7 +307,7 @@ body {
 }
 .notePastDateSuspect {
 	width: 70%;
-	margin-left: 10px;
+	margin-left: 0px;
 }
 
 .notePastBtns button {
@@ -315,6 +334,12 @@ body {
 	margin-left: 0px;
 }
 
+.noteEditFormContainer {
+	border: 4px double goldenrod;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
 /* practice example button */
 /* .dark-background{
 	background-color: #2b362e;
@@ -328,7 +353,7 @@ footer {
     left: 0;
     bottom: 0;
     width: 100vw;
-    background-color: darkslategrey;
+    background-color: rgba(23, 61, 87);
 	/* background-color: rgb(151, 125, 78); */
     margin-top: 30px;
     
@@ -339,10 +364,10 @@ footer {
 	/* background-image: url('https://images.unsplash.com/photo-1454117096348-e4abbeba002c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80');*/
 	/* background-position: center top; */
 	/* opacity: 0.5;*/
-	background: linear-gradient(rgba(47, 79, 79, 0.6), rgba(23, 61, 87, 0.95)), url('https://c4.wallpaperflare.com/wallpaper/885/452/864/wireframe-low-poly-geometry-abstract-wallpaper-preview.jpg');
+	background: linear-gradient(rgba(23, 61, 87, 0.6), rgba(23, 61, 87, 0.95)), url('https://c4.wallpaperflare.com/wallpaper/885/452/864/wireframe-low-poly-geometry-abstract-wallpaper-preview.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-color: darkslategrey;
+	background-color: rgba(23, 61, 87);
 	padding: 30px 20px 20px 20px;
 }
 

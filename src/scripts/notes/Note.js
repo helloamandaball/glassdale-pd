@@ -10,7 +10,7 @@ export const Note = (note) => {
                     <div class="note-past">
                         <div class="notePastHeaderBox">
                             <div class="notePastDateSuspect">
-                                <p><strong>Date:</strong> ${note.noteDate} <strong>&nbsp;&bull;&nbsp; Suspect:</strong> ${note.suspectName}</p>
+                                <p><strong>Date:</strong> ${new Date(note.noteDate).toLocaleDateString('en-US')} <strong>&nbsp;&bull;&nbsp; Suspect:</strong> ${note.suspectName}</p>
                             </div>
                             <div class="notePastBtns">
                                 <button type="submit" id="editNote--${note.id}" class="noteEditBtn">Edit</button>
