@@ -172,7 +172,7 @@ body {
 
 .officers-list-card {
 	display: flex;
-	background-color: rgb(24, 33, 87);
+	background-color: rgb(23, 61, 87);
 	color: white;
 	width: 40vw;
 	padding: 5px;
@@ -190,7 +190,7 @@ body {
 
 .officerName {
 	font-size: 15px;
-	padding:10% 10px 0px;
+	padding:10% 10px 10%;
 }
 
 .officerYrs {
@@ -326,9 +326,10 @@ footer {
 	/* background-image: url('https://images.unsplash.com/photo-1454117096348-e4abbeba002c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80');*/
 	/* background-position: center top; */
 	/* opacity: 0.5;*/
+	background: linear-gradient(rgba(47, 79, 79, 0.6), rgba(23, 61, 87, 0.95)), url('https://c4.wallpaperflare.com/wallpaper/885/452/864/wireframe-low-poly-geometry-abstract-wallpaper-preview.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
-	background: linear-gradient(rgba(47, 79, 79, 0.5), rgba(47, 79, 79, 0.95)), url('https://c4.wallpaperflare.com/wallpaper/885/452/864/wireframe-low-poly-geometry-abstract-wallpaper-preview.jpg');
+	background-color: darkslategrey;
 	padding: 30px 20px 20px 20px;
 }
 
