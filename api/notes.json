@@ -35,6 +35,18 @@
       "suspectName": "Pacman",
       "noteText": "Maybe the ghosts want to be friends.",
       "id": 6
+    },
+    {
+      "id": 7,
+      "noteDate": "2021-11-11",
+      "suspectName": "Bonnie Parker",
+      "noteText": "Parker moved back in with her mother and worked as a waitress in Dallas. One of her regular customers was postal worker Ted Hinton. In 1932, he joined the Dallas Sheriff's Department and eventually served as a member of the posse that killed Bonnie and Clyde. "
+    },
+    {
+      "id": 8,
+      "noteDate": "2021-11-11",
+      "suspectName": "Clyde Barrow",
+      "noteText": "Barrow was first arrested in late 1926, at age 17, after running when police confronted him over a rental car that he had failed to return on time. His second arrest was with his brother Buck soon after for possession of stolen turkeys. Barrow had some legitimate jobs during 1927 through 1929, but he also cracked safes, robbed stores, and stole cars. He met 19 year-old Parker through a mutual friend in January 1930, and they spent much time together during the following weeks."
     }
   ]
 }

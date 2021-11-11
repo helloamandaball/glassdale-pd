@@ -8,12 +8,16 @@ export const Note = (note) => {
             <ul>
                 <li>
                     <div class="note-past">
-                        <p><strong>Date:</strong> ${note.noteDate} <strong>&nbsp;&bull;&nbsp; Suspect:</strong> ${note.suspectName}</p>
+                        <div class="notePastHeaderBox">
+                            <div class="notePastDateSuspect">
+                                <p><strong>Date:</strong> ${note.noteDate} <strong>&nbsp;&bull;&nbsp; Suspect:</strong> ${note.suspectName}</p>
+                            </div>
+                            <div class="notePastBtns">
+                                <button type="submit" id="editNote--${note.id}" class="noteEditBtn">Edit</button>
+                                <button type="submit" id="deleteNote--${note.id}" class="noteDeleteBtn">Delete</button>
+                            </div>
+                        </div>
                         <p><em>${note.noteText}</em></p>
-                    </div>
-                    <div class="notePastBtns">
-                        <button type="submit" id="editNote--${note.id}" class="noteEditBtn">Edit</button>
-                        <button type="submit" id="deleteNote--${note.id}" class="noteDeleteBtn">Delete</button>
                     </div>
                 </li>
             </ul>
