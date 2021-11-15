@@ -2,51 +2,21 @@
   "notes": [
     {
       "id": 1,
-      "noteDate": "10/3/2021",
-      "suspectName": "Jesse James",
+      "criminalId": 1,
+      "noteDate": "2021-11-01",
       "noteText": "As a teen in 1864, James and his brother Frank joined a guerrilla unit responsible for murdering dozens of Union soldiers."
     },
     {
-      "id": 2,
-      "noteDate": "10/4/2021",
-      "suspectName": "Billy the Kid",
-      "noteText": "Legend says the Wild West outlaw Billy the Kid—cattle rustler, gunslinger, murderer, escape artist—killed 21 people before he turned 21 years old, his age at death."
+      "noteDate": "2021-11-19",
+      "noteText": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.",
+      "criminalId": 6,
+      "id": 2
     },
     {
-      "id": 3,
-      "noteDate": "10/6/2021",
-      "suspectName": "Belle Starr",
-      "noteText": "Born to a well-to-do, Confederate-sympathizing family, Myra Maybelle Shirley Starr—later known as Belle, and, eventually, the Bandit Queen—was a teenager in Scyene, Texas, in 1864 when outlaws Jesse James and the Younger brothers used her family’s home as a hideout."
-    },
-    {
-      "id": 4,
-      "noteDate": "10/8/2021",
-      "suspectName": "Butch Cassidy",
-      "noteText": "Born Robert LeRoy Parker in 1866, in Circleville, Utah to devout Mormons, the famed outlaw who later adopted the moniker Butch Cassidy grew up dirt poor, one of 13 children."
-    },
-    {
-      "id": 5,
-      "noteDate": "10/10/2021",
-      "suspectName": "John Wesley Hardin",
-      "noteText": "Did he kill 20 men? Forty? Fifty? The total body count may be unclear, but according to John Wesley Hardin, they all deserved it. I never killed anyone who didn't need killing, he famously said."
-    },
-    {
-      "noteDate": "2021-10-27",
-      "suspectName": "Pacman",
-      "noteText": "Maybe the ghosts want to be friends.",
-      "id": 6
-    },
-    {
-      "id": 7,
-      "noteDate": "2021-11-11",
-      "suspectName": "Bonnie Parker",
-      "noteText": "Parker moved back in with her mother and worked as a waitress in Dallas. One of her regular customers was postal worker Ted Hinton. In 1932, he joined the Dallas Sheriff's Department and eventually served as a member of the posse that killed Bonnie and Clyde. "
-    },
-    {
-      "id": 8,
-      "noteDate": "2021-11-11",
-      "suspectName": "Clyde Barrow",
-      "noteText": "Barrow was first arrested in late 1926, at age 17, after running when police confronted him over a rental car that he had failed to return on time. His second arrest was with his brother Buck soon after for possession of stolen turkeys. Barrow had some legitimate jobs during 1927 through 1929, but he also cracked safes, robbed stores, and stole cars. He met 19 year-old Parker through a mutual friend in January 1930, and they spent much time together during the following weeks."
+      "noteDate": "2021-11-13",
+      "noteText": "Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.",
+      "criminalId": 8,
+      "id": 3
     }
   ]
 }
