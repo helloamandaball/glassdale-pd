@@ -19,9 +19,14 @@ const render = (noteCollection, criminalCollection) => {
                     <p><em>Note Date: ${note.noteDate}</em></p>
                     <p>${note.noteText}</p>
                 </div>
+                <div class="notePastBtns">
+                    <button type="submit" id="editNote--${note.id}" class="noteEditBtn">Edit</button>
+                    <button type="submit" id="deleteNote--${note.id}" class="noteDeleteBtn">Delete</button>
+                </div>
             </div>
         `
-    })
+    }).join("")
+    //.join("") is a work around that creates a string of the code. If it wasn't there, I get a weird comma showing up after the return`...` block of code.
 }
 
 export const NoteList = () => {
@@ -38,6 +43,13 @@ export const NoteList = () => {
             NoteForm()
         })
 }
+
+// Nav Bar listener
+//this calls the form itself with NoteForm(), the past notes section is called with NoteList()
+document.querySelector("#notes-nav-link").addEventListener("click", () => {
+    // NoteForm()  
+    NoteList()  
+})
 
 
 //// Previous code prior to Ch.12:
@@ -64,11 +76,3 @@ export const NoteList = () => {
 //         `
 //     })
 // }
-
-// Nav Bar listener
-//this calls the form itself with NoteForm(), the past notes section is called with NoteList()
-document.querySelector("#notes-nav-link").addEventListener("click", () => {
-    // NoteForm()  
-    NoteList()  
-})
-

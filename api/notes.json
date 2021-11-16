@@ -2,9 +2,9 @@
   "notes": [
     {
       "id": 1,
-      "criminalId": 1,
       "noteDate": "2021-11-01",
-      "noteText": "As a teen in 1864, James and his brother Frank joined a guerrilla unit responsible for murdering dozens of Union soldiers."
+      "noteText": "As a teen in 1864, James and his brother Frank joined a guerrilla unit responsible for murdering dozens of Union soldiers.",
+      "criminalId": 4
     },
     {
       "noteDate": "2021-11-19",

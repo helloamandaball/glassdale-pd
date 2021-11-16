@@ -14,21 +14,21 @@ export const NoteForm = () => {
 
 const render = criminalNameId => {
     document.querySelector(".note-form").innerHTML += `
-            <h2>Notes</h2>
-            <div class="note-form-container">
-                <input type="date" id="note-date">
-                <select id="noteForm--criminal" class="criminalSelect">
+        <h2>Notes</h2>
+        <div class="note-form-container">
+            <input type="date" id="note-date">
+            <select id="noteForm--criminal" class="criminalSelect">
                 <option value="0">Please select a criminal...</option>
-                    ${
-                        criminalNameId.map(criminal => {
-                            return `<option value="${criminal.id}">${criminal.name}</option>`
-                        })
-                    }
-                </select>
-                <textarea id="note-text" name="note-text" rows="4" cols="50" placeholder="Enter Notes Here"></textarea>
-                <button id="saveNote" class="saveNoteBtn">Save Note</button>
-            </div>
-        `
+                ${
+                    criminalNameId.map(criminal => {
+                        return `<option value="${criminal.id}">${criminal.name}</option>`
+                    })
+                }
+            </select>
+            <textarea id="note-text" name="note-text" rows="4" cols="50" placeholder="Enter Notes Here"></textarea>
+            <button id="saveNote" class="saveNoteBtn">Save Note</button>
+        </div>
+    `
 }
 
 //This code is before adding the one-to-many code in Ch.12

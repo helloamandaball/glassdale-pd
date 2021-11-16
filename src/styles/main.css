@@ -248,7 +248,7 @@ body {
 /* Note List */
 .note-form {
 	margin-top: 20px;
-	border: 2px dashed orange;
+	border: 3px dashed orange;
 }
 
 .note-form h2{
@@ -289,12 +289,20 @@ body {
 	width: 150px;
 }
 
+.cancelNoteChangesBtn {
+	background-color: grey;
+	border: none;
+	color: white;
+	width: 150px;
+}
+
 .note-form-container button:hover {
 	background-color: rgb(23, 61, 87);
 }
 
 .note-past-list-container {
 	border-top: 1px dotted grey;
+	margin-top: 20px;
 }
 
 .note-past-list-container h3{
@@ -316,8 +324,18 @@ body {
 	display: flex;
 	align-items: baseline;
 }
+
 .notePastDateSuspect {
 	width: 70%;
+	margin-left: 0px;
+}
+
+.notePastBtns {
+	/* display: flex;
+	justify-content: flex-end; */
+	height: 24px;
+	width: 30%;
+	margin-right: 0px;
 	margin-left: 0px;
 }
 
@@ -328,21 +346,12 @@ body {
 	font-size: 10px;
 	height: 24px;
 	padding: 3px 8px 2px;
-	margin: 0px 7px 1px;
+	margin: 0px 7px 1px 0px;
 }
 
 .notePastBtns button:hover {
 	background-color: rgb(134, 105, 32);
 	color: white;
-}
-
-.notePastBtns {
-	display: flex;
-	justify-content: flex-end;
-	height: 24px;
-	width: 30%;
-	margin-right: 0px;
-	margin-left: 0px;
 }
 
 .noteEditFormContainer {
