@@ -23,12 +23,8 @@ export const NoteEditForm = (noteId) => {
                 <input type="hidden" id="note-ID" value="${noteWeWantToEdit.id}"/>
                 <input type="date" id="note-date" value="${noteWeWantToEdit.noteDate}"/>
                 <select id="noteForm--criminal" class="criminalSelect">
-                    <option value="${criminalWeWantToEdit.criminalId}">&nbsp; ${criminalWeWantToEdit.name}</option>
-                    ${
-                        criminalsArray.map(criminal => {
-                            return `<option value="${criminal.id}">${criminal.name}</option>`
-                        })
-                    }
+                    <option class="italic bold" value="${criminalWeWantToEdit.criminalId}">Supect Name: ${criminalWeWantToEdit.name}</option>
+                    ${criminalsArray.map(criminal => `<option value="${criminal.id}">${criminal.name}</option>`)}
                 </select>
                 <textarea id="note-text" name="note-text" rows="4" cols="50">${noteWeWantToEdit.noteText}</textarea>
                 <div class="editNoteBtns">

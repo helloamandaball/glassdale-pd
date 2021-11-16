@@ -46,4 +46,28 @@ eventHub.addEventListener("click", (eventObject) => {
     }
 })
 
+////Old code before Ch.12
+
+// export const Note = (note) => {
+//     return `
+//         <section id="noteID--${note.id}" class="note-past-list">
+//             <ul>
+//                 <li>
+//                     <div class="note-past">
+//                         <div class="notePastHeaderBox">
+//                             <div class="notePastDateSuspect">
+//                                 <p><strong>Date:</strong> ${new Date(note.noteDate).toLocaleDateString('en-US')} <strong>&nbsp;&bull;&nbsp; Suspect:</strong> ${note.suspectName}</p>
+//                             </div>
+//                             <div class="notePastBtns">
+//                                 <button type="submit" id="editNote--${note.id}" class="noteEditBtn">Edit</button>
+//                                 <button type="submit" id="deleteNote--${note.id}" class="noteDeleteBtn">Delete</button>
+//                             </div>
+//                         </div>
+//                         <p><em>${note.noteText}</em></p>
+//                     </div>
+//                 </li>
+//             </ul>
+//         </section>
+//     `
+// }
 

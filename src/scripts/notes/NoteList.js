@@ -14,7 +14,7 @@ const render = (noteCollection, criminalCollection) => {
         // console.log(relatedCriminal)
         return `
             <div class="note-past-list-container">
-                 <h3>Previous notes about ${relatedCriminal.name}</h3>
+                 <h3>Suspect: ${relatedCriminal.name}</h3>
                  <div class="note-list">
                     <p><em>Note Date: ${note.noteDate}</em></p>
                     <p>${note.noteText}</p>
@@ -66,6 +66,34 @@ document.querySelector("#notes-nav-link").addEventListener("click", () => {
 //         htmlContentTarget.innerHTML = `
 //             <div class="note-form">
 //                 ${NoteForm()}
+//             </div>
+//             <div class="note-past-list-container">
+//                 <h2>Previous Notes</h2>
+//                 <div class="note-list">
+//                     ${noteHTML}
+//                 </div>
+//             </div>
+//         `
+//     })
+// }
+
+
+////Code from overview of Ch.12, there is something missing so go back and compare to what was uploaded to gitHub.
+// export const NoteList = () => {
+//     getNote()
+//     .then(getCriminals)
+//     .then(() => {
+//         let noteArray = useNotes();
+//         let noteHTML = useCriminals();
+
+//         noteArray.forEach((singleNoteObject) => {
+//          let singleCriminal = criminalCollection.find(criminal => singleNote.id === note.criminalId)
+//             noteHTML += Note(singleNoteObject, singleCriminal)
+//         })
+
+//         htmlContentTarget.innerHTML = `
+//             <div class="note-form">
+//                 ${NoteForm(criminal)}
 //             </div>
 //             <div class="note-past-list-container">
 //                 <h2>Previous Notes</h2>

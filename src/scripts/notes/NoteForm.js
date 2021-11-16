@@ -12,6 +12,7 @@ export const NoteForm = () => {
     })
 }
 
+//noteForm--criminal is to get the foreign key (fk) of criminal
 const render = criminalNameId => {
     document.querySelector(".note-form").innerHTML += `
         <h2>Notes</h2>
@@ -19,11 +20,7 @@ const render = criminalNameId => {
             <input type="date" id="note-date">
             <select id="noteForm--criminal" class="criminalSelect">
                 <option value="0">Please select a criminal...</option>
-                ${
-                    criminalNameId.map(criminal => {
-                        return `<option value="${criminal.id}">${criminal.name}</option>`
-                    })
-                }
+                ${criminalNameId.map(criminal => `<option value="${criminal.id}">${criminal.name}</option>`)}
             </select>
             <textarea id="note-text" name="note-text" rows="4" cols="50" placeholder="Enter Notes Here"></textarea>
             <button id="saveNote" class="saveNoteBtn">Save Note</button>
