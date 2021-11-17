@@ -25,4 +25,7 @@ export const FacilityList = () => {
 
 document.querySelector("#facility-nav-link").addEventListener("click", () => {
     FacilityList()
+    // document.querySelector(".filterMenuContainer").innerHTML = ""
+    document.querySelector(".filters__crime").innerHTML = ""
+    document.querySelector(".filters__officer").innerHTML = ""
   })

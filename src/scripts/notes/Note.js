@@ -2,7 +2,7 @@ import { deleteNote } from "./NoteDataProvider.js";
 import { NoteList } from "./NoteList.js"
 import { NoteEditForm } from "./NoteEditForm.js"
 
-export const Note = (note) => {
+export const Note = (note, criminal) => {
     return `
         <section id="noteID--${note.id}" class="note-past-list">
             <ul>
@@ -10,7 +10,7 @@ export const Note = (note) => {
                     <div class="note-past">
                         <div class="notePastHeaderBox">
                             <div class="notePastDateSuspect">
-                                <p><strong>Date:</strong> ${new Date(note.noteDate).toLocaleDateString('en-US')} <strong>&nbsp;&bull;&nbsp; Suspect:</strong> ${note.suspectName}</p>
+                                <p><strong>Date:</strong> ${new Date(note.noteDate).toLocaleDateString('en-US')} <strong>&nbsp;&bull;&nbsp; Suspect:</strong> ${criminal.name}</p>
                             </div>
                             <div class="notePastBtns">
                                 <button type="submit" id="editNote--${note.id}" class="noteEditBtn">Edit</button>
@@ -46,7 +46,9 @@ eventHub.addEventListener("click", (eventObject) => {
     }
 })
 
-////Old code before Ch.12
+
+///////////////////////////////////////////////////////////////////////
+////Old code before Ch.12:
 
 // export const Note = (note) => {
 //     return `
@@ -70,4 +72,3 @@ eventHub.addEventListener("click", (eventObject) => {
 //         </section>
 //     `
 // }
-

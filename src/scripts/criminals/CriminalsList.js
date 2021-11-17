@@ -33,6 +33,7 @@ export const CriminalsList = (selectListName, selectedChoice) => {
         })
 
         contentTarget.innerHTML = `
+            <button id="clearFiltersBtn" class="clearFiltersBtn">Clear Filters</button>
             <h2>Criminals</h2>
             <div class="criminals-list">
                 ${criminalsHTML}
@@ -40,6 +41,15 @@ export const CriminalsList = (selectListName, selectedChoice) => {
         `
     })
 }
+
+contentTarget.addEventListener("click", (event) => {
+    if(event.target.id === "clearFiltersBtn"){
+        // //.value = 0 because we want it to go back to the <option value="0">Please select a crime...</option>
+        document.querySelector("#crimeSelect").value = 0,
+        document.querySelector("#OfficerSelect").value = 0
+    }
+    // CriminalsList()
+})
 
 // Nav Bar listener
 document.querySelector("#criminals-nav-link").addEventListener("click", () => {

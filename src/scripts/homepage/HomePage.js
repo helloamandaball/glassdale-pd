@@ -36,4 +36,6 @@ Navbar()
 document.querySelector("#home-link").addEventListener("click", () => {
     console.log("homepage link clicked")
     HomePage()
+    document.querySelector(".filters__crime").innerHTML = ""
+    document.querySelector(".filters__officer").innerHTML = ""
   })

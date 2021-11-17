@@ -53,4 +53,7 @@ export const OfficersList = () => {
 
 document.querySelector("#officers-nav-link").addEventListener("click", () => {
     OfficersList()
+    // document.querySelector(".filterMenuContainer").innerHTML = ""
+    document.querySelector(".filters__crime").innerHTML = ""
+    document.querySelector(".filters__officer").innerHTML = ""
   })
