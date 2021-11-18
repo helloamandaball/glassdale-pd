@@ -7,8 +7,8 @@ export const useNotes = () => {
 
 export const getNote = () => {
     //you can find the fetch local address once you start json in the terminal, it'll provide the address to place into the '' below
-    return fetch ("http://localhost:8088/notes")
-
+    return fetch ('http://localhost:8088/notes')
+    //take your unsorted list and by adding the .json() your then going to sort the list to be usable and then make that sorted list equal to the notesCollection empty array - the square brackets [] - on line 2.
     .then(messyNoteList => messyNoteList.json())
 
     .then(sortedNoteList => {
