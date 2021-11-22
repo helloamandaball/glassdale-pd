@@ -46,6 +46,7 @@ export const updateNote = note => {
         },
         body: JSON.stringify(note)
     })
+    .then(getNote)
 }
 
 
