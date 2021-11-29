@@ -1,7 +1,7 @@
 import { Navbar } from "./navbar/navbar.js";
 import { HomePage } from "./homepage/HomePage.js"
 import { Footer } from "./footer/footer.js";
-import { CriminalsList } from "./criminals/CriminalsList.js";
+import { CriminalList } from "./criminals/CriminalsList.js";
 import { OfficersList } from "./officers/OfficersList.js";
 import { FacilityList } from "./facility/FacilityList.js"
 import { NoteForm } from "./notes/NoteForm.js"

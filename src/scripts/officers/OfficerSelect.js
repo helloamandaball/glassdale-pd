@@ -1,7 +1,7 @@
 // import { useOfficers, getOfficers } from "./OfficersDataProvider.js"
 // import { OfficersList } from "./OfficersList.js"
 import { useCriminals, getCriminals } from "../criminals/CriminalsDataProvider.js"
-import { CriminalsList } from "../criminals/CriminalsList.js"
+import { CriminalList } from "../criminals/CriminalsList.js"
 
     //We are using criminal list because we want to use this OfficerSelect to choose the Arresting Officer data from the CriminalList, not use the data from the OFficerDataProvider.js
 const contentTarget = document.querySelector(".filters__officer")
@@ -36,7 +36,7 @@ eventHub.addEventListener("change", (eventObject) => {
     if(eventObject.target.id === "OfficerSelect"){
 
         const selectedOfficer = eventObject.target.value
-        CriminalsList("officers", selectedOfficer)
+        CriminalList("officers", selectedOfficer)
     }
 })
 
