@@ -25,7 +25,7 @@ export const CriminalList = () => {
         }
     )
 }
-
+// See Facility List for version that renders some HTML along with this code (h2, div, etc.)
 const render = (criminalsToRender, allFacilities, allRelationships) => {
     // Step 1 - Iterate all criminals
     contentTarget.innerHTML = criminalsToRender.map(
