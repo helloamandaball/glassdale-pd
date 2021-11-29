@@ -11,19 +11,19 @@ const contentTarget = document.querySelector(".print-list")
 export const CriminalList = () => {
     // Kick off the fetching of both collections of data
     getFacility()
-        .then(getCriminals)
-        .then(getCriminalFacilities)
-        .then(
-            () => {
-                // Pull in the data now that it has been fetched
-                const facilities = useFacility()
-                const crimFac = useCriminalFacilities()
-                const criminals = useCriminals()
+    .then(getCriminals)
+    .then(getCriminalFacilities)
+    .then(
+        () => {
+            // Pull in the data now that it has been fetched
+            const facilities = useFacility()
+            const crimFac = useCriminalFacilities()
+            const criminals = useCriminals()
 
-                // Pass all three collections of data to render()
-                render(criminals, facilities, crimFac)
-            }
-        )
+            // Pass all three collections of data to render()
+            render(criminals, facilities, crimFac)
+        }
+    )
 }
 
 const render = (criminalsToRender, allFacilities, allRelationships) => {
