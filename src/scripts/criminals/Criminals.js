@@ -13,3 +13,4 @@ export const Criminals = (criminalsObject) => {
     `
 }
 //age, eyeColor, name, workHistory, phone, address, incarceration (start & end), conviction, arrestingOfficer, known_associates (name & alibi)
+
